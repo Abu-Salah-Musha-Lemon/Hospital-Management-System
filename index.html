@@ -48,10 +48,11 @@
                                 <a class="nav-link" href="./doctor/doctor.html">Doctors</a>
                             </li>
                         </ul>
-                        <form class="d-flex" role="search">
-                            <button class="btn btn-outline-success shadow-none m-2" type="submit" data-bs-toggle="modal"
-                                data-bs-target="#Registation">Register</button>
-                            <button class="btn btn-outline-success shadow-none m-2" type="submit" data-bs-toggle="modal"
+                        <form class="d-flex" role="submit">
+                            <button type="button" class="btn btn-outline-success shadow-none m-2 " data-bs-toggle="modal" data-bs-target="#Registation">
+                                Registation
+                              </button>
+                            <button type="button" class="btn btn-outline-success shadow-none m-2" type="submit" data-bs-toggle="modal"
                                 data-bs-target="#login">log in</button>
 
                         </form>
@@ -100,7 +101,7 @@
         <div class="conatainer-xl">
             <div class="container  ">
                 <div class="row my-4 ">
-                    <div class="col-12 mb-2 col-md-4 mr-2 col-lg-3 mx-4">
+                    <div class="col-12 mb-4 col-sm-2 p-md-5 col-md-4 mr-2 col-lg-3 mx-4">
                         <div class="card" style="width:300px;">
                             <div class="card-body">
                                 <img style=" height: 300px;"
@@ -113,7 +114,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 mb-2 col-md-4  col-lg-3 mx-4">
+                    <div class="col-12 mb-4 col-sm-2 p-md-5 col-md-4  col-lg-3 mx-4">
                         <div class="card" style="width:300px;">
                             <div class="card-body">
                                 <img style=" height: 300px;"
@@ -126,7 +127,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 mb-3 col-md-4 col-lg-3 mx-4">
+                    <div class="col-12 mb-4 col-sm-2 p-md-5 col-md-4 col-lg-3 mx-4">
                         <div class="card" style="width:300px;">
                             <div class="card-body">
                                 <img style=" height: 300px;"
@@ -284,13 +285,15 @@
     </div>
     <hr>
     <!-- footer  -->
-    <div class="content  bg-body-tertiary">
-
-        <footer class="d-flex align-items-center ">
-            <div>@lemon 2023</div>
-        </footer>
-        <hr>
+    <div class="content bg-body-tertiary">
+        <div class="container ">
+            <footer class="text-center">
+                @ lemon
+            </footer>
+        </div>
     </div>
+    <hr>
+
 
 
     <!-- logIn Modal -->
@@ -298,7 +301,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Log In</h1>
+                    <h1 class="modal-title fs-5" id="login">Log In</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -326,7 +329,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Register</h1>
+                    <h1 class="modal-title fs-5" id="Registation">Register</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
