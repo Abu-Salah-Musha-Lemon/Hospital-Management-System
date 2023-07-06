@@ -1,70 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-
-    <!-- this link used for module -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-    <title>Doctors</title>
-    <style>
-        body {}
-
-        /* *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        } */
-    </style>
+<?php include_once "header.php" ?>
+    <title>Admin</title>
 </head>
 
 <body>
 
+<?php include_once "nav.php" ?>
 
-    <div class="content bg-body-tertiary">
-        <div class="container-xl ">
-            <!-- nav -->
-
-            <nav class="navbar navbar-expand-sm   navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="../index.html">HMSC</a>
-                    <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#mynavbar">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="mynavbar">
-                        <ul class="navbar-nav me-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" href="./doctor.html">Profile</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./Appointments.html">MY appointments</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link border-none" data-toggle="modal" data-target="#dr_update_info"
-                                    href="./Appointments.html">Update Info</a>
-                            </li>
-                        </ul>
-                        <form class="d-flex">
-                            <button class="btn btn-primary" type="button">Logout</button>
-                        </form>
-                    </div>
-                </div>
-            </nav>
-
-        </div>
-    </div>
-
-    <!-- update Inof -->
-
+<?php include_once "sidebar.php" ?>
     <!-- Modal -->
     <div class="modal fade" id="dr_update_info" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
@@ -218,30 +160,8 @@
         </div>
     </div>
 
+<footer></footer>
 
 
+    <?php include_once "footer.php" ?>
 
-    <div class="content bg-body-tertiary">
-        <div class="container-xl ">
-            <footer class="text-center fixed-bottom my-4 fs-4">
-                @ lemon
-            </footer>
-        </div>
-    </div>
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
-    </script>
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-    </script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-    </script>
-</body>
-
-</html>
