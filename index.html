@@ -17,7 +17,10 @@
     * {
         margin: 0;
         padding: 0;
-        box-sizing: border-box;
+        box-sizing: border-box; 
+    }
+    body{
+         background-color: #F8F9FA;
     }
 
     .content {
@@ -26,7 +29,7 @@
 </style>
 
 <body>
-    <div class="content bg-body-tertiary">
+    <div class="container-fluid bg-body-tertiary">
         <div class="container-xl ">
             <nav class="container navbar navbar-expand-lg ">
                 <div class="container-fluid">
@@ -63,21 +66,21 @@
         </div>
     </div>
     <!-- slider -->
-    <div class="content bg-body-tertiary">
+    <div class="container-fluid bg-body-tertiary">
         <div class="container-xl ">
             <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img style="width: 1200px; height: 600px;"
+                        <img class="rounded" style="width: 1200px; height: 600px; "
                             src="https://images.pexels.com/photos/247786/pexels-photo-247786.jpeg" class="d-block w-100"
                             alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img style="width: 1200px; height: 600px;"
+                        <img class="rounded" style="width: 1200px; height: 600px;"
                             src="https://images.pexels.com/photos/3938022/pexels-photo-3938022.jpeg"
                             class="d-block w-100" alt="...">
                     </div>
-                    <div class="carousel-item">
+                    <div class="rounded" class="carousel-item">
                         <img style="width: 1200px; height: 600px;"
                             src="https://images.pexels.com/photos/3279209/pexels-photo-3279209.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                             class="d-block w-100" alt="...">
@@ -98,46 +101,46 @@
     </div>
 
     <!-- Doctors -->
-    <div class="content bg-body-tertiary">
+    <div class="container-fluid bg-body-tertiary">
         <div class="conatainer-xl">
             <div class="container  ">
-                <div class="row my-4 ">
-                    <div class="col-12 mb-4 col-sm-2 p-md-5 col-md-4 mr-2 col-lg-3 mx-4">
-                        <div class="card" style="width:300px;">
+                <div class="row  ">
+                    <div class="col-12 col-sm-6  my-2  col-md-4  my-2 col-lg-4 ">
+                        <div class="card shadow-sm" style="width:400px;">
                             <div class="card-body">
-                                <img style=" height: 300px;"
+                                <img style=" height: 400px;"
                                     src="https://images.pexels.com/photos/5215024/pexels-photo-5215024.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                                     class="card-img-top" alt="...">
                                 <h5 class="card-title">Name:</h5>
                                 <p class="card-text">Qualification</p>
                                 <p class="card-text">time shedule</p>
-                                <a href="#" class="btn btn-primary">Read More..</a>
+                                <a href="#" class="btn btn-primary shadow-sm">Read More..</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 mb-4 col-sm-2 p-md-5 col-md-4  col-lg-3 mx-4">
-                        <div class="card" style="width:300px;">
+                    <div class="col-12 col-sm-6 my-2  col-md-4 mx-2  col-lg-4 ">
+                        <div class="card shadow-sm" style="width:400px;">
                             <div class="card-body">
-                                <img style=" height: 300px;"
+                                <img style=" height: 400px;"
                                     src="https://images.pexels.com/photos/5215024/pexels-photo-5215024.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                                     class="card-img-top" alt="...">
                                 <h5 class="card-title">Name:</h5>
                                 <p class="card-text">Qualification</p>
                                 <p class="card-text">time shedule</p>
-                                <a href="#" class="btn btn-primary">Read More..</a>
+                                <a href="#" class="btn btn-primary shadow-sm">Read More..</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 mb-4 col-sm-2 p-md-5 col-md-4 col-lg-3 mx-4">
-                        <div class="card" style="width:300px;">
-                            <div class="card-body">
-                                <img style=" height: 300px;"
+                    <div class="col-12  col-sm-6   col-md-4   col-lg-4 ">
+                        <div class="card shadow-sm" style="width:400px;">
+                            <div class="card-body ">
+                                <img style=" height: 400px;"
                                     src="https://images.pexels.com/photos/5215024/pexels-photo-5215024.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                                     class="card-img-top" alt="...">
                                 <h5 class="card-title">Name:</h5>
                                 <p class="card-text">Qualification</p>
                                 <p class="card-text">time shedule</p>
-                                <a href="#" class="btn btn-primary">Read More..</a>
+                                <a href="#" class="btn btn-primary shadow-sm">Read More..</a>
                             </div>
                         </div>
                     </div>
@@ -147,7 +150,7 @@
     </div>
 
     <!-- about  -->
-    <div class="content bg-body-tertiary">
+    <div class="container-fluid bg-body-tertiary">
         <div class="container-xl ">
             <div class="card m-2">
                 <div class="card-body">
@@ -169,33 +172,33 @@
     </div>
 
     <!-- NOTICE -->
-    <div class="content bg-body-tertiary">
+    <div class="container-fluid bg-body-tertiary">
         <div class="container-xl ">
             <h3>NOTICE</h3>
             <div class="d-flex  flex-row md-4 mx-2 row">
-                <div class="mx-2 bg-success px-5 py-2 rounded col-12 col-md-6  my-2 col-lg-2">Academic</div>
-                <div class="mx-2 bg-success px-5 py-2 rounded col-12 col-md-6  my-2 col-lg-2">Reserch</div>
-                <div class="mx-2 bg-success px-5 py-2 rounded col-12 col-md-6  my-2 col-lg-2">Admission</div>
-                <div class="mx-2 bg-success px-5 py-2 rounded col-12 col-md-6  my-2 col-lg-2">Gender</div>
+                <div class="mx-2  px-5 py-2 rounded col-12 col-md-6  my-2 col-lg-2 rounded border-bottom  border-top shadow-sm"> Academic</div>
+                <div class="mx-2  px-5 py-2 rounded col-12 col-md-6  my-2 col-lg-2 rounded border-bottom  border-top shadow-sm">Reserch</div>
+                <div class="mx-2  px-5 py-2 rounded col-12 col-md-6  my-2 col-lg-2 rounded border-bottom  border-top shadow-sm">Admission</div>
+                <div class="mx-2  px-5 py-2 rounded col-12 col-md-6  my-2 col-lg-2 rounded border-bottom  border-top shadow-sm">Gender</div>
             </div>
             <div>
                 <h2>Academic</h2>
                 <div class="row">
-                    <div class="col-12 col-md-6  my-2 col-lg-5 d-flex">
+                    <div class="col-12 col-md-8  my-2 col-lg-5 d-flex rounded border-bottom  ">
                         <i class="bi bi-calendar-check"></i>
                         <p class="px-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
-                    <div class="col-12 col-md-6  my-2 col-lg-5 d-flex">
+                    <div class="col-12 col-md-8  my-2 col-lg-5 d-flex rounded border-bottom">
                         <i class="bi bi-calendar-check"></i>
                         <p class="px-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-12 col-md-6  my-2 col-lg-5 d-flex">
+                    <div class="col-12 col-md-8  my-2 col-lg-5 d-flex rounded border-bottom">
                         <i class="bi bi-calendar-check"></i>
                         <p class="px-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
-                    <div class="col-12 col-md-6  my-2 col-lg-5 d-flex">
+                    <div class="col-12 col-md-8  my-2 col-lg-5 d-flex rounded border-bottom">
                         <i class="bi bi-calendar-check"></i>
                         <p class="px-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
@@ -207,28 +210,28 @@
 
 
     <!-- areas of activites  -->
-    <div class="content bg-body-tertiary">
+    <div class="container-fluid bg-body-tertiary">
         <div class="container-xl ">
             <h3>AREAS OF ACTIVITES</h3>
             <div class="d-flex  flex-row md-4 mx-2 row">
-                <div class="card my-2 p-2 col-12 col-md-6  col-lg-3" style="width: 400px;">
-                    <img class="card-img-top"
+                <div class="card my-2 mx-2 p-2 col-12 col-md-3  col-lg-3" style="width: 400px;">
+                    <img class="card-img-top rounded "
                         src="https://images.pexels.com/photos/1462630/pexels-photo-1462630.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                         alt="Card image cap">
                     <div class="card-body">
                         <h4>Education <h4>
                     </div>
                 </div>
-                <div class="card my-2 p-2 col-12 col-md-6 col-lg-3" style="width: 400px;">
-                    <img class="card-img-top"
+                <div class="card my-2 mx-2 p-2 col-12 col-md-3 col-lg-3" style="width: 400px;">
+                    <img class="card-img-top rounded"
                         src="https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                         alt="Card image cap">
                     <div class="card-body">
                         <h4>Research</h4>
                     </div>
                 </div>
-                <div class="card my-2 p-2 col-12 col-md-6 col-lg-3" style="width: 400px;">
-                    <img class="card-img-top"
+                <div class="card my-2 mx-2 p-2 col-12 col-md-3 col-lg-3" style="width: 400px;">
+                    <img class="card-img-top rounded"
                         src="https://images.pexels.com/photos/3938022/pexels-photo-3938022.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                         alt="Card image cap">
                     <div class="card-body">
@@ -285,7 +288,7 @@
     </div>
 </div>
     <!-- footer  -->
-    <div class="content bg-body-tertiary">
+    <div class="container-fluid bg-body-tertiary">
         <div class="container ">
             <footer class="text-center  my-4 fs-4">
                 @ lemon
