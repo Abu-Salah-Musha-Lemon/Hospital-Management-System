@@ -16,20 +16,21 @@
 
     <title>Doctors</title>
     <style>
-        body {}
-
-        /* *{
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-        } */
+        }
+
+        body {
+            background-color: #F8F9FA;
+        }
     </style>
 </head>
 
 <body>
 
-
-    <div class="content bg-body-tertiary">
+    <div class="container-fluid bg-body-tertiary shadow-sm bg">
         <div class="container-xl ">
             <!-- nav -->
 
@@ -82,10 +83,10 @@
                             <h4>Personal Inof</h4>
                             <div class="row">
                                 <div class="col">
-                                    <input type="text" class="form-control" placeholder="Age">
+                                    <input type="text" class="form-control shadow-none" placeholder="Age">
                                 </div>
                                 <div class="col">
-                                    <input type="text" class="form-control" placeholder="Experience">
+                                    <input type="text" class="form-control shadow-none" placeholder="Experience">
                                 </div>
                             </div>
                         </div>
@@ -93,10 +94,10 @@
                             <h4>Contact Info</h4>
                             <div class="row">
                                 <div class="col">
-                                    <input type="email" class="form-control" placeholder="Email">
+                                    <input type="email" class="form-control shadow-none" placeholder="Email">
                                 </div>
                                 <div class="col">
-                                    <input type="phone" class="form-control" placeholder="phone">
+                                    <input type="phone" class="form-control shadow-none" placeholder="phone">
                                 </div>
                             </div>
                         </div>
@@ -104,10 +105,18 @@
                             <h3>Schedule :></h3>
                             <div class="row my-2">
                                 <div class="col">
-                                    <input type="day" class="form-control" placeholder="day">
+                                    <input type="day" class="form-control shadow-none" placeholder="day">
                                 </div>
                                 <div class="col">
-                                    <input type="time" class="form-control" placeholder="time AM/PM">
+                                    <input type="time" class="form-control shadow-none" placeholder="time AM/PM">
+                                </div>
+                            </div>
+                            <div class="row my-2">
+                                <div class="col">
+                                    <input type="day" class="form-control shadow-none" placeholder="day">
+                                </div>
+                                <div class="col">
+                                    <input type="time" class="form-control shadow-none" placeholder="time AM/PM">
                                 </div>
                             </div>
                             <div class="row my-2">
@@ -115,15 +124,7 @@
                                     <input type="day" class="form-control" placeholder="day">
                                 </div>
                                 <div class="col">
-                                    <input type="time" class="form-control" placeholder="time AM/PM">
-                                </div>
-                            </div>
-                            <div class="row my-2">
-                                <div class="col">
-                                    <input type="day" class="form-control" placeholder="day">
-                                </div>
-                                <div class="col">
-                                    <input type="time" class="form-control" placeholder="time AM/PM">
+                                    <input type="time" class="form-control shadow-none" placeholder="time AM/PM">
                                 </div>
                             </div>
                         </div>
@@ -137,76 +138,71 @@
         </div>
     </div>
 
+    <!-- doctor Details -->
+    <!-- <div class="container-fluid bg-body-tertiary ">
+        <div class="container-xl"> -->
+    <section class="intro ">
+        <div class="bg-image h-100 ">
+            <div class="mask d-flex align-items-center h-100" style="background-color: #f3f2f2;">
+                <div class="container my-2">
+                    <div class="row d-flex justify-content-center align-items-center">
+                        <div class="col-12 col-lg-10 col-xl-8">
+                            <div class="card  " style="border-radius: 1rem;">
+                                <div class="row g-0">
+                                    <div class="col-md-4  d-md-block mb-rounded">
+                                        <img class="rounded my-2 mx-2"
+                                            src="https://images.pexels.com/photos/5215024/pexels-photo-5215024.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                            alt="Doctor" class="img-fluid"
+                                            style="border-top-left-radius: 1rem; border-bottom-left-radius: 1rem;"
+                                            width="250px; height:300px;" />
+                                    </div>
+                                    <div class="col-md-8 d-flex align-items-center">
+                                        <div class="card-body py-2 px-4 p-md-4">
 
+                                            <form action="">
+                                                <h4 class="fw-bold mb-2" style="color: #92aad0;">Doctor ID : 1234123
+                                                </h4>
 
-    <div class="content bg-body-tertiary ">
-        <div class="container-xl">
-            <section class="intro ">
-                <div class="bg-image h-100 ">
-                    <div class="mask d-flex align-items-center h-100" style="background-color: #f3f2f2;">
-                        <div class="container my-2">
-                            <div class="row d-flex justify-content-center align-items-center">
-                                <div class="col-12 col-lg-10 col-xl-8">
-                                    <div class="card" style="border-radius: 1rem;">
-                                        <div class="row g-0">
-                                            <div class="col-md-4  d-md-block mb-rounded">
-                                                <img src="https://images.pexels.com/photos/5215024/pexels-photo-5215024.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                                                    alt="Doctor" class="img-fluid"
-                                                    style="border-top-left-radius: 1rem; border-bottom-left-radius: 1rem;" />
-                                            </div>
-                                            <div class="col-md-8 d-flex align-items-center">
-                                                <div class="card-body py-5 px-4 p-md-5">
-
-                                                    <form action="">
-                                                        <h4 class="fw-bold mb-4" style="color: #92aad0;">Doctor ID :
-                                                            1234123
-                                                        </h4>
-
-                                                        <div class="form-outline ">
-                                                            <label class="form-label">Name : </label>
-                                                        </div>
-                                                        <div class="form-outline ">
-                                                            <label class="form-label">Age : 23</label>
-                                                        </div>
-                                                        <div class="form-outline ">
-                                                            <label class="form-label">Gender : Female</label>
-                                                        </div>
-                                                        <div class="form-outline ">
-                                                            <label class="form-label">Experience :</label>
-                                                        </div>
-                                                        <div class="form-outline mb-4">
-                                                            <label class="form-label">Language Spoken : English, Hindi,
-                                                                Bangla</label>
-                                                        </div>
-                                                        <div class="form-outline mb-4">
-                                                            <label class="form-label">Contact Details :-</label><br>
-                                                            <label for="">Mobile No :- 00000000000 </label><br>
-                                                            <label for="">Email :- eadjshf@.com </label>
-                                                        </div>
-                                                        <div class="form-outline mb-4">
-                                                            <h3>Schedule :></h3>
-                                                            <div
-                                                                class="row  text-sm-left text-md-left text-lg-center text-xl-center">
-                                                                <div class=" col-12 col-6 col-lg-4">
-                                                                    <h5>Monday</h4>
-                                                                        <h6>9:00 AM - 12:00 PM</h6>
-                                                                </div>
-                                                                <div class="col-12 col-6 col-lg-4">
-                                                                    <h5>Monday</h4>
-                                                                        <h6>9:00 AM - 12:00 PM</h6>
-                                                                </div>
-                                                                <div class="col-12 col-6 col-lg-4">
-                                                                    <h5>Monday</h4>
-                                                                        <h6>9:00 AM - 12:00 PM</h6>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-
-                                                    </form>
-
+                                                <div class="form-outline ">
+                                                    <label class="form-label">Name : </label>
                                                 </div>
-                                            </div>
+                                                <div class="form-outline ">
+                                                    <label class="form-label">Age : 23</label>
+                                                </div>
+                                                <div class="form-outline ">
+                                                    <label class="form-label">Gender : Female</label>
+                                                </div>
+                                                <div class="form-outline ">
+                                                    <label class="form-label">Experience :</label>
+                                                </div>
+                                                <div class="form-outline mb-2">
+                                                    <label class="form-label">Language Spoken : English, Hindi,
+                                                        Bangla</label>
+                                                </div>
+                                                <div class="form-outline mb-4">
+                                                    <label class="form-label">Contact Details :-</label><br>
+                                                    <label for="">Mobile No :- 00000000000 </label><br>
+                                                    <label for="">Email :- eadjshf@.com </label>
+                                                </div>
+                                                <div class="form-outline mb-2">
+                                                    <h5>Schedule :</h5>
+                                                    <div
+                                                        class="row  text-sm-left text-md-left text-lg-center text-xl-center">
+                                                        <div class=" col-12 col-6 col-lg-4">
+                                                            <h6>Monday</h6>
+                                                            <h6>9:00 AM - 12:00 PM</h6>
+                                                        </div>
+                                                        <div class=" col-12 col-6 col-lg-4">
+                                                            <h6>Monday</h6>
+                                                            <h6>9:00 AM - 12:00 PM</h6>
+                                                        </div>
+                                                        <div class=" col-12 col-6 col-lg-4">
+                                                            <h6>Monday</h6>
+                                                            <h6>9:00 AM - 12:00 PM</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
@@ -214,20 +210,25 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
         </div>
-    </div>
+    </section>
+    <!-- </div>
+    </div> -->
 
 
-
-
-    <div class="content bg-body-tertiary">
+    <!-- footer  -->
+    <!-- <div class="container-fluid bg-body-tertiary">
         <div class="container-xl ">
-            <footer class="text-center fixed-bottom my-4 fs-4">
+            <footer class="text-center  my-2 fs-4">
                 @ lemon
             </footer>
         </div>
     </div>
+    <hr> -->
+
+
+
 
 
 
