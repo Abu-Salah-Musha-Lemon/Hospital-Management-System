@@ -1,8 +1,8 @@
-<div class="container-fluid bg-body-tertiary">
+<div class="container-fluid bg-body-tertiary ">
     <div class="container-xl ">
         <!-- nav -->
-
-        <nav class="navbar navbar-expand-sm   navbar navbar-expand-lg navbar-light bg-light">
+        <div class="shadow-sm mt-2" style="width: 100%;">
+        <nav class="navbar navbar-expand-sm   navbar navbar-expand-lg navbar-light bg-light shadow-sm">
             <div class="container-fluid">
                 <a class="navbar-brand" href="../index.html">HMSC</a>
                 <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
@@ -29,6 +29,6 @@
                 </div>
             </div>
         </nav>
-
+        </div>
     </div>
 </div>
