@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.Container {
+    width:100%;
+    height: 100%;
+    position: relative;
+    background: #fbf3f0;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.Dashboard {
+    width: 943px;
+    height: 927px;
+    left: 349px;
+    top: 29px;
+    position: absolute;
+}
+
+.Card01 {
+    top: 200px;
+    position: absolute;
+}
+
+.Card {
+    width: 280px;
+    padding-top: 100px;
+    padding-bottom: 20px;
+    top: 40px;
+    position: absolute;
+    background: white;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.04);
+    border-radius: 25px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+}
+
+.Doctors {
+    color: #686161;
+    font-size: 40px;
+    font-family: Inter;
+    font-weight: 700;
+    word-wrap: break-word;
+}
+
+.DoctorCrud {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Gender {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 40px;
+}
+
+.Male {
+    width: 80px;
+    height: 80px;
+    background: rgb(255, 255, 255);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, .05);
+    border-radius: 4px;
+    border-right: 0.5px solid #f3f3f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+
+.Crud {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    display: flex;
+}
+
+.crud_1 {
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 48px;
+    display: inline-flex;
+}
+
+.Add {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 20px;
+    background: #F4C7B6;
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.05) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(0.5px);
+}
+
+.Add_logo {
+    width: 47.78px;
+    height: 66.04px;
+
+}
+
+
+.Delete {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 20px;
+    background: #F4C7B6;
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.05) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(0.5px);
+}
+
+/* .Profile {
+    width: 240px;
+    height: 240px;
+    left: 80px;
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    border: 5px solid #ce4a1a;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    display: inline-flex;
+} */
+.profile_img {
+    width: 120px;
+    height: 120px;
+    left: 80px;
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    border: 5px solid #ce4a1a;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    display: inline-flex;
+}
+/* 
+.Exclude {
+    width: 208px;
+    height: 208px;
+    background: black;
+    border: 0.5px solid black;
+} */
+
+/* admin Inof */
+.AdminInfo {
+    width: 96%;
+    height: 100px;
+    padding: 8px 18px;
+    top: 90px;
+    position: absolute;
+    background: white;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    display: inline-flex;
+}
+
+
+.InfoDes {
+    width: 550px;
+    height: 100px;
+display: flex;
+justify-content: flex-start;
+align-items: flex-start;
+flex-direction: column;
+}
+
+.Text {
+    color: black;
+    font-size: 30px;
+    font-family: Inter;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.Text_2 {
+    color: black;
+    font-size: 20px;
+    font-family: Inter;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+/* serarch ------------------ */
+.Search {
+    width: 600px;
+    height: 60px;
+    position: absolute;
+    /* background-color: red; */
+}
+
+.SBg {
+    width: 600px;
+    height: 60px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    border-radius: 4px;
+    border-bottom: 0.5px #e2d9d5 solid;
+}
+
+.material-symbols-outlined {
+    top: 0;
+    left: 0;
+    transform: translate(50%);
+    font-size: 40px;
+    font-weight: 400;
+    color: black;
+}
+
+.Plaseholder {
+    left: 100px;
+    top: 20px;
+    position: absolute;
+    color: gray;
+    font-size: 20px;
+    font-family: Inter;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.SearchLogo {
+    width: 55px;
+    height: 55px;
+    left: 10px;
+    top: 10px;
+    position: absolute;
+    color: white;
+}
+
+.SideNav {
+    width: 300px;
+    background: white;
+
+}
+
+.SideNavBg {
+    height: 100vh;
+    margin-left: 30px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.NavButtonPatent {
+
+    height: 75px;
+    padding: 18px 80px;
+    top: 409px;
+    position: absolute;
+    background: rgba(219, 53, 41, 0.9);
+    box-shadow: 10px 10px 20px #fa7373;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+    display: inline-flex;
+}
+
+.Patent {
+    text-align: center;
+    color: black;
+    font-size: 30px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 39.16px;
+    word-wrap: break-word;
+}
+
+.NavButtonDoctor {
+
+    height: 75px;
+    padding: 18px 80px;
+    top: 530px;
+    position: absolute;
+    background: rgba(219, 53, 41, 0.9);
+    box-shadow: 10px 10px 20px #fa7373;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+    display: inline-flex;
+}
+
+.Doctor {
+    text-align: center;
+    color: black;
+    font-size: 30px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 39.16px;
+    word-wrap: break-word;
+}
+
+.NavAdminImg {
+    width: 110px;
+    height: 110px;
+    left: 65px;
+    top: 214px;
+    position: absolute;
+}
+
+.Admin {
+    width: 110px;
+    height: 60px;
+    padding: 10px;
+    left: 0px;
+    top: 110px;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    display: inline-flex;
+}
+
+.Admin_log {
+    color: black;
+    margin-top: 20px;
+    font-size: 30px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 40px;
+    word-wrap: break-word;
+}
+
+.NavAdminLogo {
+    width: 120px;
+    height: 120px;
+    padding: 10px;
+    position: absolute;
+    background: #f97c72;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 75px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    display: inline-flex;
+}
+
+.Img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+
+}
+
+.NavLogo {
+    width: 120px;
+    height: 120px;
+    /* left: 30px; */
+    top: 30px;
+    position: absolute;
+    background: #f97c72;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 75px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    display: inline-flex
+}
+
+.Hmsc {
+    color: black;
+    font-size: 30px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 39.16px;
+    word-wrap: break-word"
+
+}
