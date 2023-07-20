@@ -1,121 +1,273 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="newadmin.css" />
-    <title>Admin</title>
-  </head>
-  <body>
-    <div class="Container">
-      <div class="Dashboard">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="newadmin.css" />
+  <title>Admin</title>
+</head>
+
+<body>
+  <div class="Container">
+    <div class="SideNav">
+        <div class="NavLogo">HMSC</div>
+        <div class="NavAdminImg">
+            <img class="nav_img" src="https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg" />
+          <h4 class="Admin_log" >Admin</h4>
+        </div>
+        <div class="NavButtonPatent">
+          <div class="">
+            <a href="" class=" Patent">Patent</a>
+          </div>
+          <div class="">
+            <a href="" class="Doctor">doctor</a>
+          </div>
+        </div>
+        
+
+
+    </div>
+
+    <div class="Dashboard">
+
+      <div class="Search">
+            <form class="d-flex SBg" role="search">
+              <input class="btn_inp form-control me-2 shadow-none" type="search" placeholder="Search" aria-label="Search"class="">
+              <button class="btn_search btn btn-outline-success  " type="submit">Search</button>
+            </form>
+      </div>
+      <div class="AdminInfo">
+        <div class="InfoLogo">
+          <img class="Img" src="https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg" />
+        </div>
+        <div class="InfoDes">
+          <div class="Text">Welcome to Dashboard</div>
+          <div class="Text_2">Mrs. lina</div>
+        </div>
+      </div>
+
+      <div class="card_list">
+
         <div class="Card01">
           <div class="Card">
+            <div class="Profile">
+              <img class="profile_img" src="https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg" alt=""
+                srcset="">
+            </div>
             <div class="Doctors">Doctors</div>
             <div class="DoctorCrud">
               <div class="Gender">
                 <div class="Male">
                   <h3>25</h3>
-                 <h4>Male</h4>
+                  <h4>Male</h4>
                 </div>
                 <div class="Male">
                   <h3>25</h3>
-                 <h4>Female</h4>
+                  <h4>Female</h4>
                 </div>
               </div>
               <div class="Crud">
                 <div class="crud_1">
-                  <div class="Add">
-                    <div class="Add_logo">Add</div>
-                  </div>
-                  <div class="Add">
-                    <div class="Add_logo">Edit</div>
-                  </div>
+                  <i class="bi bi-person-fill-add btn btn-success btn_card " type="submit" role="button" data-bs-toggle="modal" data-bs-target="#add"></i>
+                  <i class="bi bi-pencil-square btn btn-warning btn_card" type="submit" role="button"  data-bs-toggle="modal" data-bs-target="#edit"></i>
+
                 </div>
-                <div class="Delete"></div>
+                <div class="delete">
+                  <i class="bi bi-person-dash-fill btn btn-danger btn_card " type="submit" role="button" data-bs-toggle="modal" data-bs-target="#delete"></i>
+                </div>
+
               </div>
             </div>
           </div>
-          <div class="Profile">
-<img class="profile_img" src="https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg" alt="" srcset="">
-            <!-- <div class="Exclude"  ></div> -->
-          </div>
+
         </div>
-        <!-- <div class="Card02" style="width: 400px; height: 670px; left: 543px; top: 257px; position: absolute">
-        <div class="Card" style="width: 400px; height: 550px; padding-top: 114px; padding-bottom: 26px; padding-left: 20px; padding-right: 20px; left: 0px; top: 120px; position: absolute; background: white; box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.04); border-radius: 25px; flex-direction: column; justify-content: center; align-items: center; display: inline-flex">
-          <div class="Doctors" style="color: #686161; font-size: 40px; font-family: Inter; font-weight: 700; line-height: 84.01px; word-wrap: break-word">Doctors</div>
-          <div class="DoctorCrud" style="padding-left: 5px; padding-right: 5px; flex-direction: column; justify-content: center; align-items: center; gap: 7px; display: flex">
-            <div class="Gender" style="justify-content: flex-start; align-items: flex-start; gap: 69px; display: inline-flex">
-              <div class="Male" style="width: 100px; height: 100px; padding-left: 8px; padding-right: 8px; background: white; box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.25); border-radius: 4px; border-right: 0.50px #F3F3F3 solid; flex-direction: column; justify-content: center; align-items: center; gap: 8px; display: inline-flex">
-                <div style="width: 39px; height: 27px; color: #FDA584; font-size: 30px; font-family: Inter; font-weight: 700; line-height: 63.01px; word-wrap: break-word">25</div>
-                <div class="Female" style="width: 72px; height: 21px; color: #A3A3A3; font-size: 20px; font-family: Inter; font-weight: 400; line-height: 42px; word-wrap: break-word">Female</div>
-              </div>
-              <div class="Frame12" style="width: 100px; height: 100px; padding-left: 8px; padding-right: 8px; background: white; box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.25); border-radius: 4px; border-right: 0.50px #F3F3F3 solid; flex-direction: column; justify-content: center; align-items: center; gap: 8px; display: inline-flex">
-                <div style="width: 39px; height: 27px; color: #FDA584; font-size: 30px; font-family: Inter; font-weight: 700; line-height: 63.01px; word-wrap: break-word">25</div>
-                <div class="Female" style="width: 72px; height: 21px; color: #A3A3A3; font-size: 20px; font-family: Inter; font-weight: 400; line-height: 42px; word-wrap: break-word">Female</div>
-              </div>
+        <div class="Card01">
+          <div class="Card">
+            <div class="Profile">
+              <img class="profile_img" src="https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg" alt=""
+                srcset="">
             </div>
-            <div class="Crud" style="flex-direction: column; justify-content: flex-start; align-items: center; gap: 10px; display: flex">
-              <div class="Frame13" style="justify-content: flex-start; align-items: flex-start; gap: 48px; display: inline-flex">
-                <div class="Add" style="width: 120px; height: 120px; padding: 20px; background: #F4C7B6; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.05) inset; border-radius: 20px; backdrop-filter: blur(1px); flex-direction: column; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
-                  <div class="Add" style="width: 47.78px; height: 66.04px; border: 0.75px #FDA584 solid"></div>
+            <div class="Doctors">Doctors</div>
+            <div class="DoctorCrud">
+              <div class="Gender">
+                <div class="Male">
+                  <h3>25</h3>
+                  <h4>Male</h4>
                 </div>
-                <div class="Edit" style="width: 120px; height: 120px; padding: 20px; background: #F4C7B6; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.05) inset; border-radius: 20px; backdrop-filter: blur(1px); justify-content: center; align-items: center; gap: 10px; display: flex">
-                  <div class="Vector" style="width: 49px; height: 70px; box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.04); border-radius: 20px; border: 0.50px #FDA584 solid"></div>
+                <div class="Male">
+                  <h3>25</h3>
+                  <h4>Female</h4>
                 </div>
               </div>
-              <div class="Delete" style="width: 120px; height: 120px; padding: 20px; background: #F4C7B6; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.05) inset; border-radius: 20px; backdrop-filter: blur(1px); justify-content: center; align-items: center; gap: 10px; display: inline-flex">
-                <div class="Delete" style="width: 47.78px; height: 66.04px; border: 0.75px #FDA584 solid"></div>
+              <div class="Crud">
+                <div class="crud_1">
+                  <i class="bi bi-person-fill-add btn btn-success btn_card " type="submit" role="button"></i>
+                  <i class="bi bi-pencil-square btn btn-warning btn_card" type="submit" role="button"></i>
+
+                </div>
+                <div class="delete">
+                  <i class="bi bi-person-dash-fill btn btn-danger btn_card " type="submit" role="button"></i>
+                </div>
+
               </div>
             </div>
           </div>
+
         </div>
-        <div class="Profile" style="width: 240px; height: 240px; padding-left: 20px; padding-right: 20px; left: 80px; top: 0px; position: absolute; background: white; border-radius: 120px; border: 2px #F3EBE8 solid; flex-direction: column; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
-          <div class="Exclude" style="width: 208.50px; height: 208.50px; background: black; border: 0.50px black solid"></div>
-        </div>
-      </div> -->
-        <div class="AdminInfo">
-          <div class="InfoLogo">
-            <img class="Img" src="https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg" />
-          </div>
-          <div class="InfoDes">
-            <div class="Text">Welcome to Dashboard</div>
-            <div class="Text_2">Mrs. lina</div>
-          </div>
-        </div>
-        <div class="Search">
-          <div class="SBg">
-            <div class="Plaseholder">Enter you Search Result</div>
-            <div class="SearchLogo">
-              <span class="material-symbols-outlined search_o1">Search</span>
-            </div>
-          </div>
-        </div>
+
       </div>
-      <div class="SideNav">
-        <div class="SideNavBg">
-        <div class="NavButtonPatent">
-          <div class="Patent">Patent</div>
-        </div>
-        <div class="NavButtonDoctor">
-          <div class="Doctor">Doctor</div>
-        </div>
-        <div class="NavAdminImg">
-          <div class="Admin">
-            <div class="Admin_log">Admin</div>
+
+    </div>
+
+  </div>
+
+  <!-- module -->
+<!-- Button trigger modal -->
+
+<!-- add Doctor Modal -->
+<div class="modal fade" id="add" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Add</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form class="row g-3" method="post">
+          <div class="col-md-6">
+              <label for="" class="form-label">First Name</label>
+              <input type="text" class="form-control shadow-none">
           </div>
-          <div class="InfoLogo">
-            <img class="Img" src="https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg" />
+          <div class="col-md-6">
+              <label for="" class="form-label">Last Name</label>
+              <input type="text" class="form-control shadow-none">
           </div>
-        </div>
-        <div class="NavLogo">HMSC</div>
+          <div class="col-md-6">
+              <label for="" class="form-label">Phone Number</label>
+              <input type="phone" class="form-control shadow-none">
+          </div>
+          <div class="col-md-6 ">
+              <label for="" class="form-label">Gender</label>
+              <div class="row d-flex">
+                  <div class="col-6">Male
+                      <input class="form-check-input" type="radio" name="exampleRadios"
+                          id="exampleRadios1" value="option1" checked>
+                  </div>
+                  <div class="col-6">
+                      Female
+                      <input class="form-check-input" type="radio" name="exampleRadios"
+                          id="exampleRadios1" value="option1" checked>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-6">
+              <label for="inputEmail4" class="form-label">Email</label>
+              <input type="email" class="form-control shadow-none" id="inputEmail4">
+          </div>
+          <div class="col-md-6">
+              <label for="inputPassword4" class="form-label">Password</label>
+              <input type="password" class="form-control shadow-none" id="inputPassword4">
+          </div>
+          <div class="col-12">
+              <button type="submit" class="btn btn-primary">Add</button>
+          </div>
+      </form>
+        
       </div>
     </div>
-  </body>
+  </div>
+</div>
+
+<!-- edit Doctor Modal -->
+<div class="modal fade" id="edit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Edit doctor</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form class="row g-3" method="post">
+          <div class="mb-6">
+              <label for="" class="form-label">ID</label>
+              <input type="text" class="form-control shadow-none">
+          </div>
+          <div class="col-md-6">
+              <label for="" class="form-label">First Name</label>
+              <input type="text" class="form-control shadow-none">
+          </div>
+          <div class="col-md-6">
+              <label for="" class="form-label">Last Name</label>
+              <input type="text" class="form-control shadow-none">
+          </div>
+          <div class="col-md-6">
+              <label for="" class="form-label">Phone Number</label>
+              <input type="phone" class="form-control shadow-none">
+          </div>
+          <div class="col-md-6">
+              <label for="inputEmail4" class="form-label">Email</label>
+              <input type="email" class="form-control shadow-none" id="inputEmail4">
+          </div>
+          <div class="col-md-6">
+              <label for="inputPassword4" class="form-label">Old Password</label>
+              <input type="password" class="form-control shadow-none" id="inputPassword4">
+          </div>
+          <div class="col-md-6">
+              <label for="inputPassword4" class="form-label">New Password</label>
+              <input type="password" class="form-control shadow-none" id="inputPassword4">
+          </div>
+          <div class="col-12">
+              <button type="submit" class="btn btn-primary">Update</button>
+          </div>
+      </form>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- delete Doctor Modal -->
+<div class="modal fade" id="delete" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Edit doctor</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form class="row g-3" method="post">
+          <div class="mb-6">
+              <label for="" class="form-label">ID</label>
+              <input type="text" class="form-control shadow-none">
+          </div>
+          <div class="mb-6">
+              <label for="" class="form-label">Phone Number</label>
+              <input type="text" class="form-control shadow-none">
+          </div>
+          
+          <div class="col-12">
+              <button type="submit" class="btn btn-danger">Delete</button>
+          </div>
+      </form>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+
 </html>
