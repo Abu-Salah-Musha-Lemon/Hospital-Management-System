@@ -49,17 +49,65 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Patients</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Departments</a>
-                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Departments
+                                </a>
+                                <style>
+                                    .sub_menu_0{
+                                        display:flex;
+                                        justify-content: space-around;
+                                        align-items: center;
+
+                                    }
+                                </style>
+                                <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                                    <div class="sub_menu_0">
+                                        <div class="sub_menu">
+                                            <a class="dropdown-item col" href="#">Emergency Department (ED)</a>
+                                            <a class="dropdown-item col" href="#">Internal Medicine</a>
+                                            <a class="dropdown-item col" href="#">Pediatrics</a>
+                                            <a class="dropdown-item col" href="#">Obstetrics and Gynecology (OB/GYN)</a>
+                                            <a class="dropdown-item" href="#">Surgery</a>
+                                            <a class="dropdown-item" href="#">Cardiology</a>
+                                        </div>
+                                        <div class="sub_menu">
+                                            <a class="dropdown-item" href="#">Oncology</a>
+                                            <a class="dropdown-item" href="#">Neurology</a>
+                                            <a class="dropdown-item" href="#">Psychiatry</a>
+                                            <a class="dropdown-item" href="#">Radiology</a>
+                                            <a class="dropdown-item" href="#">Laboratory Services</a>
+                                            <a class="dropdown-item" href="#">Nutrition and Dietetics</a>
+                                        </div>
+
+                                        <div class="sub_menu">
+                                            <a class="dropdown-item" href="#">Physical Therapy</a>
+                                            <a class="dropdown-item" href="#">Occupational Therapy</a>
+                                            <a class="dropdown-item" href="#">Intensive Care Unit (ICU)</a>
+                                            <a class="dropdown-item" href="#">Infectious Diseases</a>
+                                            <a class="dropdown-item" href="#">Nephrology</a>
+                                            <a class="dropdown-item" href="#">Endocrinology</a>
+                                        </div>
+                                        <div class="sub_menu">
+                                            <a class="dropdown-item" href="#">Pulmonology</a>
+                                            <a class="dropdown-item" href="#">Dermatology</a>
+                                            <a class="dropdown-item" href="#">RAnesthesiology</a>
+                                            <a class="dropdown-item" href="#">Medical Records and Health Information</a>
+                                            <a class="dropdown-item" href="#">Patient Relations/Advocacy:</a>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                        </div>
+                                    </div>
+                                </div>
+                              </li>
+
                             <li class="nav-item">
                                 <a class="nav-link" href="./doctor/doctor.html">Doctors</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./doctor/doctor.html">Appointments</a>
+                                <a class="nav-link" href="">Appointments</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./doctor/doctor.html">Reports</a>
+                                <a class="nav-link" href="#">Reports</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="./doctor/doctor.html">About</a>
@@ -421,11 +469,11 @@
                             <div class="col-md-6 ">
                                 <label for="" class="form-label">Gender</label>
                                 <div class="row d-flex">
-                                    <div class="col-6">Male
+                                    <div class="sub_menu">Male
                                         <input class="form-check-input" type="radio" name="exampleRadios"
                                             id="exampleRadios1" value="option1" checked>
                                     </div>
-                                    <div class="col-6">
+                                    <div class="sub_menu">
                                         Female
                                         <input class="form-check-input" type="radio" name="exampleRadios"
                                             id="exampleRadios1" value="option1" checked>
