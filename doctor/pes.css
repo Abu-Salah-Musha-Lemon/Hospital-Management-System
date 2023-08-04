@@ -1,0 +1,89 @@
+.content_p {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: space-evenly;
+  }
+
+  .doctorinfo {
+    display: grid;
+    grid-template-rows: 1fr;
+    justify-content: space-between;
+  }
+
+  .text {
+    font-size: 40px;
+    font-family: Italianno;
+    font-weight: 400;
+    word-wrap: break-word;
+  }
+  .text_sm {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+  }
+  main {
+    display: grid;
+    grid-template-columns: 40% 50% 10%;
+  }
+  .date {
+    width: 267px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-bottom: 0.5px black dotted;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid darkcyan;
+  }
+
+  .dash_bg {
+    width: 60%;
+    height: 441px;
+    padding: 10px;
+    background: #efd9d9;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    display: inline-flex;
+  }
+  .input_p {
+    font-size: 30px;
+    /* font-family: Italianno; */
+    font-weight: 400;
+    outline: none;
+    border: none;
+    width: 70%;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin-left: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  .rx {
+    margin-left: -20%;
+    color: black;
+    font-size: 64px;
+    font-family: Italianno;
+    font-weight: 400;
+    word-wrap: break-word;
+  }
+  table {
+    border-collapse: collapse;
+    margin-left: -20%;
+    margin-top: -5%;
+    text-align: center;
+    font-size: 24px;
+  }
+  .input_med {
+    outline: none;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.04);
+  }
+  /* .med{
+        border: none;
+        background-color: grey;
+        width: 100%;
+        height: 94%;
+    } */
