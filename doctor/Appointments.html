@@ -1,145 +1,343 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css">
 
     <title>Appointments</title>
-</head>
-<style>
-        * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-       
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
 
     body {
-        background-color: #F8F9FA;
-         
+      background-color: #f8f9fa;
     }
-    a{
-        text-decoration: none;
+    a {
+      text-decoration: none;
     }
-
-</style>
-<body>
-
+  </style>
+  <body>
     <div class="container-fluid bg-body-tertiary shadow-sm mb-2">
-        <div class="container-xl ">
-            <!-- nav -->
+      <div class="container-xl">
+        <!-- nav -->
 
-            <nav class="navbar navbar-expand-sm   navbar navbar-expand-lg navbar-light bg-light ">
-                <div class="container-fluid">
-                    <a class="navbar-brand"  href="../index.html">HMSC</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="mynavbar">
-                        <ul class="navbar-nav me-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" href="./doctor.html">Profile</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./Appointments.html">Appointments</a>
-                            </li>
-                        </ul>
-                        <form class="d-flex">
-                            <button class="btn btn-primary" type="button">Logout</button>
-                        </form>
-                    </div>
-                </div>
-            </nav>
-
-        </div>
+        <nav
+          class="navbar navbar-expand-sm navbar navbar-expand-lg navbar-light bg-light"
+        >
+          <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">HMSC</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#mynavbar"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+              <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="./doctor.html">Profile</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./Appointments.html"
+                    >Appointments</a
+                  >
+                </li>
+              </ul>
+              <form class="d-flex">
+                <button class="btn btn-primary" type="button">Logout</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </div>
     </div>
 
+    <div class="container-fluid bg-body-tertiary">
+      <div class="container-xl">
+        <h4 class="my-4">Appointments</h4>
 
-    <div class="container-fluid bg-body-tertiary ">
-        <div class="container-xl ">
-            <h4 class="my-4">Appointments</h4>
-           
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th scope="col">ID</th>
-                        <th scope="col">First</th>
-                        <th scope="col">Last</th>
-                        <th scope="col">Age</th>
-                        <th scope="col">Gender</th>
-                        <th scope="col">Appointment date & time</th>
-                        <th scope="col">Info</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>21</td>
-                        <td>male</td>
-                        <td>12 sunday 2023  time: 12pm</td>
-                        <td><button type="button" class="btn btn-info"> <a href="./Prescription.html">Prescription</a> </button></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>21</td>
-                        <td>male</td>
-                        <td>12-2-20001</td>
-                        <td><button type="button" class="btn btn-info"> <a href="./Prescription.html">Prescription</a> </button></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>21</td>
-                        <td>male</td>
-                        <td>12-2-20001</td>
-                        <td><button type="button" class="btn btn-info"> <a href="./Prescription.html">Prescription</a> </button></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
+        <table id="example" class="table table-striped table-bordered" style="width:100%">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Appointment date & time</th>
+                    <th>Add Prescription</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Tiger Nixon</td>
+                
+                    <td>61</td>
+                    <td>2011-04-25</td>
+                    <td><a href="./Prescription.html"><i class="bi bi-pencil-square"></i></a></td>
+                </tr>
+                <tr>
+                    <td>Garrett Winters</td>
+                  
+                    <td>63</td>
+                    <td>2011-07-25</td>
+                    <td><a href="./Prescription.html"><i class="bi bi-pencil-square"></i></a></td>
+                </tr>
+                <tr>
+                    <td>Ashton Cox</td>
 
-    <div class="content bg-body-tertiary">
-        <div class="container-xl ">
-            <nav aria-label="Page navigation example">
-                <ul class="pagination justify-content-center">
-                  <li class="page-item disabled">
-                    <a class="page-link shadow-none" href="#" tabindex="-1">Previous</a>
-                  </li>
-                  <li class="page-item shadow-none"><a class="page-link" href="#">1</a></li>
-                  <li class="page-item shadow-none"><a class="page-link" href="#">2</a></li>
-                  <li class="page-item shadow-none"><a class="page-link" href="#">3</a></li>
-                  <li class="page-item shadow-none">
-                    <a class="page-link shadow-none" href="#">Next</a>
-                  </li>
-                </ul>
-              </nav>
-        </div>
-    </div>
+                    <td>66</td>
+                    <td>2009-01-12</td>
+                    <td><a href="./Prescription.html"><i class="bi bi-pencil-square"></i></a></td>
+                </tr>
+                <tr>
+                    <td>Cedric Kelly</td>
 
-<div class="container-fluid my-6 py-4">
-    <div class="d-flex flex-column ">
+                    <td>22</td>
+                    <td>2012-03-29</td>
+                    <td><a href="./Prescription.html"><i class="bi bi-pencil-square"></i></a></td>
+                </tr>
+                <tr>
+                    <td>Airi Satou</td>
+   
+                    <td>33</td>
+                    <td>2008-11-28</td>
+                    <td><a href="./Prescription.html"><i class="bi bi-pencil-square"></i></a></td>
+                </tr>
+                <tr>
+                    <td>Brielle Williamson</td>
+             
+                    <td>61</td>
+                    <td>2012-12-02</td>
+                    <td><a href="./Prescription.html"><i class="bi bi-pencil-square"></i></a></td>
+                </tr>
+                <tr>
+                    <td>Herrod Chandler</td>
+                 
+                    <td>59</td>
+                    <td>2012-08-06</td>
+                    <td><a href="./Prescription.html"><i class="bi bi-pencil-square"></i></a></td>
+                </tr>
+                <tr>
+                    <td>Rhona Davidson</td>
+               
+                    <td>55</td>
+                    <td>2010-10-14</td>
+                    <td><a href="./Prescription.html"><i class="bi bi-pencil-square"></i></a></td>
+                </tr>
+                <tr>
+                    <td>Colleen Hurst</td>
+                   
+                    <td>39</td>
+                    <td>2009-09-15</td>
+                    <td><a href="./Prescription.html"><i class="bi bi-pencil-square"></i></a></td>
+                </tr>
+                <tr>
+                    <td>Sonya Frost</td>
+               
+                    <td>23</td>
+                    <td>2008-12-13</td>
+                    <td><a href="./Prescription.html"><i class="bi bi-pencil-square"></i></a></td>
+                </tr>
+                <tr>
+                    <td>Jena Gaines</td>
+                
+                    <td>30</td>
+                    <td>2008-12-19</td>
+                     <td><a href="./Prescription.html"><i class="bi bi-pencil-square"></i></a></td>
+                </tr>
+                <tr>
+                    <td>Quinn Flynn</td>
+                    
+                    <td>22</td>
+                    <td>2013-03-03</td>
+                    <td><a href="./Prescription.html"><i class="bi bi-pencil-square"></i></a></td>
+                </tr>
+                <tr>
+                    <td>Charde Marshall</td>
+                    
+                    <td>36</td>
+                    <td>2008-10-16</td>
+                    <td><a href="./Prescription.html"><i class="bi bi-pencil-square"></i></a></td>
+                </tr>
+                <tr>
+                    <td>Haley Kennedy</td>
+                
+                    <td>43</td>
+                    <td>2012-12-18</td>
+                    <td><a href="./Prescription.html"><i class="bi bi-pencil-square"></i></a></td>
+                </tr>
+                <tr>
+                    <td>Tatyana Fitzpatrick</td>
+                  
+                    <td>19</td>
+                    <td>2010-03-17</td>
+                    <td><a href="./Prescription.html"><i class="bi bi-pencil-square"></i></a></td>
+                </tr>
+                <tr>
+                    <td>Michael Silva</td>
+                 
+                    <td>66</td>
+                    <td>2012-11-27</td>
+                    <td><a href="./Prescription.html"><i class="bi bi-pencil-square"></i></a></td>
+                </tr>
+                <tr>
+                    <td>Paul Byrd</td>
+                   
+                    <td>64</td>
+                    <td>2010-06-09</td>
+                    <td><a href="./Prescription.html"><i class="bi bi-pencil-square"></i></a></td>
+                </tr>
+                <tr>
+                    <td>Gloria Little</td>
+                    
+                    <td>59</td>
+                    <td>2009-04-10</td>
+                    <td><a href="./Prescription.html"><i class="bi bi-pencil-square"></i></a></td>
+                </tr>
+                <tr>
+                    <td>Bradley Greer</td>
+                 
+                    <td>41</td>
+                    <td>2012-10-13</td>
+                    <td><a href="./Prescription.html"><i class="bi bi-pencil-square"></i></a></td>
+                </tr>
+                <tr>
+                    <td>Dai Rios</td>
+                 
+                    <td>35</td>
+                    <td>2012-09-26</td>
+                    <td><a href="./Prescription.html"><i class="bi bi-pencil-square"></i></a></td>
+                </tr>
+                <tr>
+                    <td>Jenette Caldwell</td>
+                  
+                    <td>30</td>
+                    <td>2011-09-03</td>
+                    <td><a href="./Prescription.html"><i class="bi bi-pencil-square"></i></a></td>
+                </tr>
+                <tr>
+                    <td>Yuri Berry</td>
+                   
+                    <td>40</td>
+                    <td>2009-06-25</td>
+                    <td><a href="./Prescription.html"><i class="bi bi-pencil-square"></i></a></td>
+                </tr>
+                <tr>
+                    <td>Caesar Vance</td>
+                   
+                    <td>21</td>
+                    <td>2011-12-12</td>
+                    <td><a href="./Prescription.html"><i class="bi bi-pencil-square"></i></a></td>
+                </tr>
+                <tr>
+                    <td>Doris Wilder</td>
+                    
+                    <td>23</td>
+                    <td>2010-09-20</td>
+                    <td><a href="./Prescription.html"><i class="bi bi-pencil-square"></i></a></td>
+                </tr>
+                <tr>
+                    <td>Angelica Ramos</td>
+                
+                    <td>47</td>
+                    <td>2009-10-09</td>
+                    <td><a href="./Prescription.html"><i class="bi bi-pencil-square"></i></a></td>
+                </tr>
+                <tr>
+                    <td>Gavin Joyce</td>
+                    
+                    <td>42</td>
+                    <td>2010-12-22</td>
+                    <td><a href="./Prescription.html"><i class="bi bi-pencil-square"></i></a></td>
+                </tr>
+                <tr>
+                    <td>Jennifer Chang</td>
+                
+                    <td>28</td>
+                    <td>2010-11-14</td>
+                    <td><a href="./Prescription.html"><i class="bi bi-pencil-square"></i></a></td>
+                </tr>
+                <tr>
+                    <td>Brenden Wagner</td>
+                   
+                    <td>28</td>
+                    <td>2011-06-07</td>
+                    <td><a href="./Prescription.html"><i class="bi bi-pencil-square"></i></a></td>
+                </tr>
+                <tr>
+                    <td>Fiona Green</td>
+                    
+                    <td>48</td>
+                    <td>2010-03-11</td>
+                    <td><a href="./Prescription.html"><i class="bi bi-pencil-square"></i></a></td>
+                </tr>
+                <tr>
+                    <td>Shou Itou</td>
+                    
+                    <td>20</td>
+                    <td>2011-08-14</td>
+                    <td><a href="./Prescription.html"><i class="bi bi-pencil-square"></i></a></td>
+                </tr>
+                <tr>
+                    <td>Michelle House</td>
+                   
+                    <td>37</td>
+                    <td>2011-06-02</td>
+                    <td><a href="./Prescription.html"><i class="bi bi-pencil-square"></i></a></td>
+                </tr>
+                
+                
+            </tbody>
+            <!-- <tfoot>
+                <tr>
+                    <th>Name</th>
+                    <th>Position</th>
+                    <th>Office</th>
+                    <th>Age</th>
+                    <th>Start date</th>
+                    <th>Salary</th>
+                </tr> -->
+            </tfoot>
+        </table>
+
+    <div class="container-fluid my-6 py-4">
+      <div class="d-flex flex-column">
         <div class="container-xl position-relative">
-            <footer class="text-center position-absolute bottom-0 start-50 translate-middle-x my-2">
-                @ lemon
-            </footer>
+          <footer
+            class="text-center position-absolute bottom-0 start-50 translate-middle-x my-2"
+          >
+            @ lemon
+          </footer>
         </div>
+      </div>
     </div>
-</div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
-    </script>
-</body>
-
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"
+    ></script>
+    <script defer src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
+  </body>
 </html>
